@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FirstActivity">
+
+//->pedio keimenoy gia thn eisagvgh tou ip    
+	<EditText
+        android:id="@+id/editTextIP"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="99dp"
+        android:background="@drawable/roundedcorners"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="10.0.2.2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+//->pedio keimenoy gia thn eisagvgh tou port
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="97dp"
+        android:background="@drawable/roundedcorners"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="8123"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIP" />
+
+//->etiketa port
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="108dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundedcorners"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="Port:"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPort"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+//->etiketa ip
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="104dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/roundedcorners"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="IP:"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextIP"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+//->emfanish eikonas
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="465dp"
+        android:layout_marginTop="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/runner" />
+
+//->koumpi gia epomenh diasthriothta
+    <ImageButton
+        android:id="@+id/imageButtonGo"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="connect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextPort"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
